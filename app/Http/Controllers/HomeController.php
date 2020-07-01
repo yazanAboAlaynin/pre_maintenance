@@ -40,6 +40,12 @@ class HomeController extends Controller
 
     public function showVehicle(Request $request)
     {
+        $request->validate([
+            'model' => 'required',
+            'make' => 'required',
+            'year' => 'required',
+
+        ]);
         $year = $request['year'];
         $model = $request['model'];
         $make = $request['make'];

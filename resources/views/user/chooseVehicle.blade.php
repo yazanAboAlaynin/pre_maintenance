@@ -1,21 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.show')
 
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">{{ __('Choose your vehicle') }}</div>
+                    <div class="card-header text-md-right">{{ __('اختر مركبتك') }}</div>
 
                     <div class="card-body">
-                        <form method="GET" action="{{ route('show.vehicle') }}">
+                        <form method="get" action="{{ route('show.vehicle') }}">
                             @csrf
                             <div class="row">
                                 <div class="col-4">
                                     <div class="form-group row">
 
                                         <div class="col-md-12 disabled">
-                                            <select  name="model" id="model" class="form-control"  onchange="enable('make')">
+                                            <select  name="model" id="model" class="form-control"  onchange="enable('make')" required>
                                                 <option value="model">model</option>
                                                 @foreach($models as $model)
                                                     <option value="{{ $model }}">{{ $model }}</option>
@@ -29,7 +29,7 @@
                                     <div class="form-group row">
 
                                         <div class="col-md-12">
-                                            <select  name="make" id="make" class="form-control" disabled  onclick="enable('year')">
+                                            <select  name="make" id="make" class="form-control" disabled  onclick="enable('year')" required>
                                                 <option value="year" >make</option>
                                                 @foreach($makes as $make)
                                                     <option value="{{ $make }}">{{ $make }}</option>
@@ -43,7 +43,7 @@
                                     <div class="form-group row">
 
                                         <div class="col-md-12 ">
-                                            <select  name="year" id="year" class="form-control" disabled>
+                                            <select  name="year" id="year" class="form-control" disabled required>
                                                 <option value="volvo">Year</option>
                                                 @foreach($years as $year)
                                                     <option value="{{ $year }}">{{ $year }}</option>
@@ -58,8 +58,8 @@
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary float-right">
-                                        {{ __('Next') }}
+                                    <button type="submit" class="btn btn-primary ">
+                                        {{ __('التالي') }}
                                     </button>
                                 </div>
                             </div>
