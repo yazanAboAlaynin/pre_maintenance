@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef9ed762-5308-433c-bcf2-d648e74d8e44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/cover7.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/chooseVehicle.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/chooseVehicle.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/showParts.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/showParts.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/showVehicle.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/showVehicle.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +26,8 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+            <state relative-caret-position="188">
+              <caret line="85" column="53" lean-forward="true" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -285,7 +272,7 @@
       <workItem from="1594045171080" duration="35000" />
       <workItem from="1595246762715" duration="422000" />
       <workItem from="1595572929100" duration="32000" />
-      <workItem from="1597077243315" duration="5081000" />
+      <workItem from="1597077243315" duration="5319000" />
     </task>
     <task id="LOCAL-00001" summary="ar">
       <created>1593624047242</created>
@@ -294,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1593624047242</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="latest">
+      <created>1597082375926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597082375926</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52739000" />
+    <option name="totallyTimeSpent" value="52977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -332,7 +326,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ar" />
-    <option name="LAST_COMMIT_MESSAGE" value="ar" />
+    <MESSAGE value="latest" />
+    <option name="LAST_COMMIT_MESSAGE" value="latest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,8 +715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="96" column="92" lean-forward="false" selection-start-line="96" selection-start-column="92" selection-end-line="96" selection-end-column="92" />
+        <state relative-caret-position="188">
+          <caret line="85" column="53" lean-forward="true" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
           <folding />
         </state>
       </provider>
