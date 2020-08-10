@@ -45,7 +45,7 @@ class AdminController extends Controller
 
         if ($files = $request->file('image')) {
             $imagePath = $request->file('image')->store('images', 'public');
-            $image = Image::make(public_path("storage/{$imagePath}"))->fit(1500, 1500);
+            $image = Image::make(public_path("storage/{$imagePath}"));
             $image->save();
         }
 

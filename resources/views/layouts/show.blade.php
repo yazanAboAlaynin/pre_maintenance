@@ -58,9 +58,9 @@
         }
     </style>
 </head>
-<body class="bg-dark">
+<body class="" style="background-color: black">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark" >
+        <nav class="navbar navbar-expand-md" style="background-color: black" >
             <div class="container ">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -94,7 +94,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" style="" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -111,7 +111,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="background-color: black">
             @yield('content')
         </main>
     </div>

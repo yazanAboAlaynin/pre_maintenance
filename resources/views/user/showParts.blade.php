@@ -5,19 +5,10 @@
 
 
     <!-------------------------------             --------------------------------------->
-    <section class="featured-categories">
+    <section class="featured-categories" style="background-color: black;">
         @if($parts->count() > 0)
-            <div class="container card shadow">
-                <div class="text-center">
-
-                </div>
-                <br/>
-                <div class="title-box">
-                    <h2>x</h2>
-                </div>
-
-
-                <div class="row">
+            <div class="container card shadow"  style="background-color: #595959;">
+                <div class="row" style="background-color: #595959;">
                     @foreach($parts as $part)
                         <div class="col-md-3">
                             <div class="product-top">
@@ -35,7 +26,7 @@
             </div>
 
         @else
-            <div class="text-center">
+            <div class="text-center" style="background-color: black;">
 
             </div>
             <br/>
