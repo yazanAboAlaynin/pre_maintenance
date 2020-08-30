@@ -25,10 +25,9 @@ class AdminController extends Controller
         return view('admin.home');
     }
 
-    public function addVehicle()
-{
-    return view('admin.addVehicle');
-}
+    public function addVehicle(){
+        return view('admin.addVehicle');
+    }
 
     public function storeVehicle(Request $request)
     {
@@ -45,8 +44,8 @@ class AdminController extends Controller
 
         if ($files = $request->file('image')) {
             $imagePath = $request->file('image')->store('images', 'public');
-            $image = Image::make(public_path("storage/{$imagePath}"));
-            $image->save();
+          //  $image = Image::make(public_path("storage/{$imagePath}"));
+          //  $image->save();
         }
 
         $v = new Vehicle();
@@ -107,11 +106,11 @@ class AdminController extends Controller
             $data = Vehicle::latest()->get();
             return DataTables::of($data)
                 ->addColumn('action', function($data){
-                    $button = '<button type="button" name="edit" id="'.$data->id.'" 
+                    $button = '<button type="button" name="edit" id="'.$data->id.'"
                     class="edit btn btn-primary btn-sm" onclick=update('.$data->id.')>Edit</button>';
-                    $button .= '&nbsp;&nbsp;<button type="button" name="delete" id="'.$data->id.'" 
+                    $button .= '&nbsp;&nbsp;<button type="button" name="delete" id="'.$data->id.'"
                     class="delete btn btn-danger btn-sm" onclick=del('.$data->id.')>Delete</button><br/>';
-                    $button .= '<br/><button type="button" name="delete" id="'.$data->id.'" 
+                    $button .= '<br/><button type="button" name="delete" id="'.$data->id.'"
                     class="delete btn btn-success btn-sm" onclick=parts('.$data->id.')>Parts</button>';
 
                     return $button;
@@ -170,9 +169,9 @@ class AdminController extends Controller
             return DataTables::of($data)
                 ->addColumn('action', function($data){
                     $url = route('admin.part.update',$data->id);
-                    $button = '<a href="'.$url.'" name="edit" id="'.$data->id.'" 
+                    $button = '<a href="'.$url.'" name="edit" id="'.$data->id.'"
                     class="edit btn btn-primary btn-sm" onclick=update('.$data->id.')>Edit</a>';
-                    $button .= '&nbsp;&nbsp;<button type="button" name="delete" id="'.$data->id.'" 
+                    $button .= '&nbsp;&nbsp;<button type="button" name="delete" id="'.$data->id.'"
                     class="delete btn btn-danger btn-sm" onclick=del('.$data->id.')>Delete</button><br/>';
 
                     return $button;

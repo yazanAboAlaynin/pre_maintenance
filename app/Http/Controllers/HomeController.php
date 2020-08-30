@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Part;
+use App\Question;
 use App\Vehicle;
 use Illuminate\Http\Request;
 
@@ -92,6 +93,23 @@ class HomeController extends Controller
         $part = Part::find($request->part);
 
         return view('user.showPart',compact('part'));
+    }
+
+    public function addQuestion(){
+        return view('user.add-question');
+    }
+
+    public function storeQuestion(Request $request){
+        $request->validate([
+            'question' => 'required',
+
+        ]);
+
+        $q = new Question();
+        $q->question = $request['question'];
+        $q->user_id = auth()->user()->id;
+        $q->save();
+        return redirect()->route('home');
     }
 
 }

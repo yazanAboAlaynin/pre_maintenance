@@ -26,9 +26,12 @@ Route::get('/show/part', 'HomeController@showPart')->name('show.part');
 Route::get('/getmake', 'HomeController@getMake')->name('getMake');
 Route::get('/getyear', 'HomeController@getYear')->name('getYear');
 Route::get('/parts/{vehicle}', 'HomeController@parts')->name('parts');
+Route::get('/add/question', 'HomeController@addQuestion')->name('add.question');
+Route::post('/store/question', 'HomeController@storeQuestion')->name('store.question');
 
 Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function() {
     Auth::routes(['register' => false]);
+
     Route::get('/register', 'auth\RegisterController@index')->name('register');
     Route::post('/create', 'auth\RegisterController@register')->name('create');
 

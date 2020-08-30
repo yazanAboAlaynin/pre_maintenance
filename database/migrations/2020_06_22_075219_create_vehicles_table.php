@@ -21,8 +21,6 @@ class CreateVehiclesTable extends Migration
             $table->string('model');
             $table->string('image');
             $table->string('guide_url');
-            $table->string('trim')->nullable();
-            $table->string('style')->nullable();
             $table->timestamps();
         });
     }

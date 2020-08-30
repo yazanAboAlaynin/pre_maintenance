@@ -9,4 +9,5 @@ class Vehicle extends Model
     public function parts(){
         return $this->hasMany(Part::class);
     }
+
 }
