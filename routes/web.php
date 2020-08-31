@@ -26,8 +26,13 @@ Route::get('/show/part', 'HomeController@showPart')->name('show.part');
 Route::get('/getmake', 'HomeController@getMake')->name('getMake');
 Route::get('/getyear', 'HomeController@getYear')->name('getYear');
 Route::get('/parts/{vehicle}', 'HomeController@parts')->name('parts');
+
 Route::get('/add/question', 'HomeController@addQuestion')->name('add.question');
 Route::post('/store/question', 'HomeController@storeQuestion')->name('store.question');
+Route::get('/questions', 'HomeController@questions')->name('questions');
+
+Route::get('question/{question}/answers', 'HomeController@questionAnswers')->name('question.answers');
+Route::post('/store/answer', 'HomeController@storeAnswer')->name('store.answer');
 
 Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function() {
     Auth::routes(['register' => false]);

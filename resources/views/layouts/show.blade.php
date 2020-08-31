@@ -60,7 +60,7 @@
 </head>
 <body class="" style="background-color: black">
     <div id="app">
-        <nav class="navbar navbar-expand-md" style="background-color: black" >
+        <nav class="navbar navbar-expand-md " style="background-color: black;border-bottom: 1px red solid " >
             <div class="container ">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}

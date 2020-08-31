@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Answer;
 use App\Part;
 use App\Question;
 use App\Vehicle;
@@ -102,14 +103,36 @@ class HomeController extends Controller
     public function storeQuestion(Request $request){
         $request->validate([
             'question' => 'required',
-
         ]);
-
         $q = new Question();
         $q->question = $request['question'];
         $q->user_id = auth()->user()->id;
         $q->save();
         return redirect()->route('home');
+    }
+
+    public function storeAnswer(Request $request){
+        $request->validate([
+            'answer' => 'required',
+        ]);
+        $q = new Answer();
+        $q->answer = $request['answer'];
+        $q->user_id = auth()->user()->id;
+        $q->question_id = $request['question'];
+        $q->save();
+        return response()->json('success',200);
+    }
+
+    public function questions(){
+        $questions = Question::all();
+
+        return view('user.questions',compact('questions'));
+    }
+
+    public function questionAnswers(Question $question){
+        $answers = $question->answers()->orderBy('created_at','desc')->get();
+
+        return view('user.answers',compact('answers','question'));
     }
 
 }
