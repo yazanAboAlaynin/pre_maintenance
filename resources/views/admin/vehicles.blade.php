@@ -24,10 +24,6 @@
                 <th>make</th>
                 <th>model</th>
                 <th>guide_url</th>
-                <th>trim</th>
-                <th>style</th>
-
-
 
                 <th width="100px">Action</th>
 
@@ -75,8 +71,7 @@
                     {data: 'make', name: 'make'},
                     {data: 'model', name: 'model'},
                     {data: 'guide_url', name: 'guide_url'},
-                    {data: 'trim', name: 'trim'},
-                    {data: 'style', name: 'style'},
+
 
 
 
@@ -91,6 +86,9 @@
         });
         function update(id) {
             window.location.href = 'vehicle/'+id+'/update';
+        }
+        function addPart(id) {
+            window.location.href = 'vehicle/'+id+'/add/part';
         }
 
         function del(id) {

@@ -68,34 +68,6 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="trim" class="col-md-4 col-form-label text-md-right">{{ __('trim') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="trim" type="text" class="form-control @error('trim') is-invalid @enderror" name="trim" value="{{ old('trim') }}" required autocomplete="trim" autofocus>
-
-                                    @error('trim')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="style" class="col-md-4 col-form-label text-md-right">{{ __('style') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="style" type="text" class="form-control @error('style') is-invalid @enderror" name="style" value="{{ old('style') }}" required autocomplete="style" autofocus>
-
-                                    @error('style')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
                                 <label for="guide_url" class="col-md-4 col-form-label text-md-right">{{ __('guide url') }}</label>
 
                                 <div class="col-md-6">

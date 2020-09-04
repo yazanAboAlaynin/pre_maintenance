@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9ed762-5308-433c-bcf2-d648e74d8e44" name="Default" comment="q">
-      <change afterPath="$PROJECT_DIR$/resources/views/user/answers.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/user/questions.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Answer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_163108_create_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_163108_create_answers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addVehicle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addVehicle.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/vehicles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/vehicles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -222,7 +219,10 @@
       <workItem from="1598804875619" duration="1350000" />
       <workItem from="1598815413037" duration="11000" />
       <workItem from="1598892478027" duration="1530000" />
-      <workItem from="1598894064452" duration="3311000" />
+      <workItem from="1598894064452" duration="3409000" />
+      <workItem from="1598898102581" duration="16000" />
+      <workItem from="1599241638633" duration="601000" />
+      <workItem from="1599244688874" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="ar">
       <created>1593624047242</created>
@@ -273,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598806152336</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="q">
+      <created>1598897407563</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598897407563</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,13 +313,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598465493772" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1598465438612">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1598897450899">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598465438612" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1598806155631">
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598897450899" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1598897409891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598806155631" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598897409891" />
   </component>
 </project>

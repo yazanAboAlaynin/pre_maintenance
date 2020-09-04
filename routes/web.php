@@ -44,7 +44,7 @@ Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function() {
     Route::get('/add/vehicle', 'AdminController@addVehicle')->name('add.vehicle');
     Route::post('/store/vehicle', 'AdminController@storeVehicle')->name('store.vehicle');
 
-    Route::get('/add/part', 'AdminController@addPart')->name('add.part');
+    Route::get('vehicle/{vehicle}/add/part', 'AdminController@addPart')->name('add.part');
     Route::post('/store/part/{vehicle}', 'AdminController@storePart')->name('store.part');
 
     Route::get('/vehicles', 'AdminController@vehicles')->name('vehicles');

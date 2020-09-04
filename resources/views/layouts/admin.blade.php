@@ -39,13 +39,13 @@
 
                     <img class="imagesidebar" src="{{ asset('images/avatar.png') }}" style="width:106px">
                     <br/><br/>
-                    <a class="ap" href=""><i class="fa fa-home" style="font-size:32px"></i>
+                    <a class="ap" href="{{route('admin.home')}}"><i class="fa fa-home" style="font-size:32px"></i>
                         <span style="margin-left: 30px;">Home</span></a>
 
-                    <a href=""><i class="fa fa-product-hunt" style="font-size:32px"></i>
-                        <span style="margin-left: 30px">Settings</span></a>
-
-
+                    <a href="{{route('admin.add.vehicle')}}"><i class="fa fa-product-hunt" style="font-size:32px"></i>
+                        <span style="margin-left: 30px">Add Vehicle</span></a>
+                    <a href="{{route('admin.vehicles')}}"><i class="fa fa-product-hunt" style="font-size:32px"></i>
+                        <span style="margin-left: 30px">Vehicles</span></a>
                     <br/>
                     <br/>
                     <br/>

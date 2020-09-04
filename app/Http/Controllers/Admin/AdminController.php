@@ -37,8 +37,6 @@ class AdminController extends Controller
             'make' => 'required',
             'model' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'trim' => 'required',
-            'style' => 'required',
             'guide_url' => 'required',
         ]);
 
@@ -54,18 +52,15 @@ class AdminController extends Controller
         $v->make = $data['make'];
         $v->model = $data['model'];
         $v->image = $imagePath;
-        $v->trim = $data['trim'];
-        $v->style = $data['style'];
         $v->guide_url = $data['guide_url'];
         $v->save();
 
-        return redirect()->route('admin.add.part',['vehicle' => $v]);
+        return redirect()->route('admin.vehicles');
 
     }
 
-    public function addPart(Request $request)
+    public function addPart(Request $request,Vehicle $vehicle)
     {
-        $vehicle = $request['vehicle'];
         return view('admin.addPart',compact('vehicle'));
     }
 
@@ -111,7 +106,9 @@ class AdminController extends Controller
                     $button .= '&nbsp;&nbsp;<button type="button" name="delete" id="'.$data->id.'"
                     class="delete btn btn-danger btn-sm" onclick=del('.$data->id.')>Delete</button><br/>';
                     $button .= '<br/><button type="button" name="delete" id="'.$data->id.'"
-                    class="delete btn btn-success btn-sm" onclick=parts('.$data->id.')>Parts</button>';
+                    class="delete btn btn-success btn-sm" onclick=parts('.$data->id.')>Parts</button> <br>';
+                    $button .= '<br/><button type="button" name="delete" id="'.$data->id.'"
+                    class="delete btn btn-success btn-sm" onclick=addPart('.$data->id.')>add part</button>';
 
                     return $button;
                 })
@@ -135,8 +132,6 @@ class AdminController extends Controller
             'year' => 'required',
             'make' => 'required',
             'model' => 'required',
-            'trim' => 'required',
-            'style' => 'required',
             'guide_url' => 'required',
         ]);
 
@@ -145,8 +140,6 @@ class AdminController extends Controller
         $v->year = $data['year'];
         $v->make = $data['make'];
         $v->model = $data['model'];
-        $v->trim = $data['trim'];
-        $v->style = $data['style'];
         $v->guide_url = $data['guide_url'];
         $v->save();
         return redirect('admin/vehicles');
