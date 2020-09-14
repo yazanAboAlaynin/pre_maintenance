@@ -20,6 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@chooseVehicle')->name('home');
+Route::get('/problems', 'HomeController@problems')->name('problems');
+Route::get('/suggestion', 'HomeController@suggestion')->name('suggestion');
+Route::get('/fixes', 'HomeController@fixes')->name('fixes');
 Route::get('/choose/vehicle', 'HomeController@chooseVehicle')->name('choose');
 Route::get('/show/vehicle', 'HomeController@showVehicle')->name('show.vehicle');
 Route::get('/show/part', 'HomeController@showPart')->name('show.part');

@@ -20,13 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef9ed762-5308-433c-bcf2-d648e74d8e44" name="Default" comment="q">
+      <change afterPath="$PROJECT_DIR$/public/images/car1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/car2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pr1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pr2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pr3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pr4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/fixes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/problems.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/suggestion.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addVehicle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addVehicle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/vehicles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/vehicles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/showVehicle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/showVehicle.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,15 +166,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\pre_maintenance\public\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\pre_maintenance\resources\views\user" />
       <recent name="C:\xampp\htdocs\pre_maintenance\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\pre_maintenance\public\css" />
       <recent name="C:\xampp\htdocs\pre_maintenance\resources\views\admin" />
       <recent name="C:\xampp\htdocs\pre_maintenance\resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pre_maintenance\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -222,7 +228,12 @@
       <workItem from="1598894064452" duration="3409000" />
       <workItem from="1598898102581" duration="16000" />
       <workItem from="1599241638633" duration="601000" />
-      <workItem from="1599244688874" duration="958000" />
+      <workItem from="1599244688874" duration="1106000" />
+      <workItem from="1599294361603" duration="86000" />
+      <workItem from="1599406560946" duration="65000" />
+      <workItem from="1599407218024" duration="30000" />
+      <workItem from="1599407301644" duration="84000" />
+      <workItem from="1600097829679" duration="2435000" />
     </task>
     <task id="LOCAL-00001" summary="ar">
       <created>1593624047242</created>
@@ -280,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598897407563</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="q">
+      <created>1599245775674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599245775674</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,9 +335,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598897450899" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1598897409891">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599245778239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598897409891" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599245778239" />
   </component>
 </project>

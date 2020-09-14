@@ -30,6 +30,18 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function problems()
+    {
+        return view('user.problems');
+    }
+    public function suggestion()
+    {
+        return view('user.suggestion');
+    }
+    public function fixes()
+    {
+        return view('user.fixes');
+    }
     public function chooseVehicle()
     {
         $vehicles = Vehicle::all();
